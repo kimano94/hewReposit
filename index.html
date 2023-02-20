@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 100%;
+            height: auto;
+            
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            width: 30%;
+            height: 250px;
+            box-sizing: border-box;
+            /* border: 2px solid #15ad20; */
+            background-color: #654ad0;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="first" ondblclick="message('Вы кликнули по квадратику первому')"></div>
+        <div class="box" id="second" ondblclick="message('Вы кликнули по квадратику второму')"></div>
+        <div class="box" id="third" ondblclick="message('Вы кликнули по квадратику третьему')"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
